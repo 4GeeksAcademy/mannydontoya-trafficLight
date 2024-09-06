@@ -1,12 +1,56 @@
+.traffic-light{
+    background-color: black;
+    width: 100px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    border-radius: 20px;
+}
 
-/* 
+.traffic-light > div {
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease; 
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.redLight{
+    background-color: red;   
+}
 
-*/
+.yellowLight{
+    background-color: yellow;
+}
+
+.greenLight{
+    background-color: green;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.opacity{
+    opacity: 0.2;
+}
+
+.glow{
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.3);
+}
+
+
+.redLight.glow {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
+}
+
+.yellowLight.glow {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 0, 0.5);
+}
+
+.greenLight.glow {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.5);
+}
